@@ -8,7 +8,7 @@ SonicCanvas is a prompt-to-music web app with a FastAPI backend and a modern Rea
 - Clean, responsive UI with interactive prompt helpers
 - Play and download generated WAV output
 - CORS-ready local dev setup
-- Demo mode toggle for quick UI verification
+- Demo mode toggle for quick UI verificatio n
 
 ## Tech Stack
 
