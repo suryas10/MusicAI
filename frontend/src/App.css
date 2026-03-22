@@ -1,0 +1,261 @@
+.app-shell {
+  min-height: 100vh;
+  padding: 24px;
+  display: grid;
+  place-items: center;
+}
+
+.hero-panel {
+  width: min(920px, 100%);
+  border-radius: 28px;
+  padding: clamp(18px, 4vw, 38px);
+  background:
+    linear-gradient(155deg, rgba(10, 21, 52, 0.88), rgba(35, 17, 46, 0.84)),
+    radial-gradient(circle at 80% -20%, rgba(0, 214, 255, 0.25), transparent 45%);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 20px 65px rgba(2, 8, 20, 0.45);
+  animation: rise 460ms ease;
+  backdrop-filter: blur(8px);
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #8fe3ff;
+}
+
+h1 {
+  margin: 8px 0 6px;
+  color: #f7fbff;
+  font-size: clamp(1.9rem, 5vw, 2.9rem);
+  line-height: 1.12;
+}
+
+.subtitle {
+  margin: 0 0 16px;
+  color: #d9e2ff;
+  font-size: clamp(0.95rem, 1.8vw, 1.05rem);
+}
+
+.mode-badge {
+  display: inline-flex;
+  border-radius: 999px;
+  padding: 7px 14px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-transform: capitalize;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.mode-waiting,
+.mode-processing,
+.mode-demo {
+  color: #2b1e00;
+  background: linear-gradient(120deg, #ffd569, #ffbe3c);
+}
+
+.mode-live {
+  color: #ecfff5;
+  background: linear-gradient(120deg, #169058, #0c6a43);
+}
+
+.mode-error {
+  color: #fff2f2;
+  background: linear-gradient(120deg, #ca3745, #9e2734);
+}
+
+.preset-wrap {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.preset-chip {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.08);
+  color: #eaf2ff;
+  border-radius: 999px;
+  font-size: 0.76rem;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: transform 180ms ease, background-color 180ms ease;
+}
+
+.preset-chip:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.composer {
+  display: grid;
+  gap: 12px;
+}
+
+label {
+  color: #edf3ff;
+  font-weight: 600;
+}
+
+textarea {
+  width: 100%;
+  min-height: 120px;
+  border-radius: 13px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(6, 11, 28, 0.46);
+  color: #ffffff;
+  padding: 13px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+textarea::placeholder {
+  color: rgba(220, 233, 255, 0.72);
+}
+
+textarea:focus,
+input[type='range']:focus,
+button:focus-visible {
+  outline: 2px solid #8fe3ff;
+  outline-offset: 2px;
+}
+
+.row-group {
+  display: grid;
+  gap: 8px;
+}
+
+input[type='range'] {
+  width: 100%;
+  accent-color: #55d4ff;
+}
+
+button {
+  border: 0;
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-size: 1rem;
+  font-weight: 700;
+  background: linear-gradient(120deg, #13c2ff, #4b7dff);
+  color: #fff;
+  cursor: pointer;
+  transition: transform 180ms ease, opacity 180ms ease, filter 180ms ease;
+}
+
+button:hover:enabled {
+  transform: translateY(-1px);
+  filter: brightness(1.06);
+}
+
+button:active:enabled {
+  transform: translateY(0);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.status {
+  margin-top: 14px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+}
+
+.status-success {
+  background: rgba(28, 162, 101, 0.22);
+  color: #d9ffe8;
+}
+
+.status-loading,
+.status-waiting {
+  background: rgba(255, 213, 105, 0.2);
+  color: #fff4d0;
+}
+
+.status-error {
+  background: rgba(202, 55, 69, 0.24);
+  color: #ffdfe2;
+}
+
+.result-panel {
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 14px;
+  background: rgba(6, 11, 28, 0.42);
+  display: grid;
+  gap: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+h2 {
+  margin: 0;
+  color: #f5f8ff;
+  font-size: 1.2rem;
+}
+
+audio {
+  width: 100%;
+}
+
+.download-link {
+  justify-self: start;
+  text-decoration: none;
+  font-weight: 700;
+  color: #d4ecff;
+  border-bottom: 1px dashed rgba(212, 236, 255, 0.5);
+}
+
+.download-link:hover {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.85);
+}
+
+.api-note {
+  margin-top: 16px;
+  color: #cfdaff;
+  font-size: 0.88rem;
+  word-break: break-all;
+}
+
+.api-note span {
+  color: #f5f8ff;
+}
+
+@media (max-width: 640px) {
+  .app-shell {
+    padding: 12px;
+  }
+
+  .hero-panel {
+    border-radius: 18px;
+  }
+
+  .preset-wrap {
+    gap: 6px;
+  }
+
+  .preset-chip {
+    font-size: 0.72rem;
+    padding: 6px 10px;
+  }
+
+  .download-link {
+    justify-self: stretch;
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
