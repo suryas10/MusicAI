@@ -51,6 +51,7 @@ python download_model.py
 ```
 
 This will:
+
 - Download facebook/musicgen-small model weights
 - Cache them in ~/.cache/huggingface/hub/
 - Take 5-20 minutes depending on internet speed
