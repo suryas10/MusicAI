@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react'
 import './App.css'
 
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000'
-const APP_NAME = 'Sushman | Kook Uncle Music Studio'
+const APP_NAME = 'SonicCanvas | AI Music Studio'
 
 const PROMPT_PRESETS = [
   'Lo-fi night drive with vinyl crackle, warm Rhodes chords, mellow bass, and soft boom-bap drums.',
